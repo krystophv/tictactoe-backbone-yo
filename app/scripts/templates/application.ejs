@@ -1,0 +1,14 @@
+<p>Active player: <%= activePlayer %></p>
+<table style="1px solid black;">
+	<% for(var i=0; i<board.length; i++){ %>
+		<tr>
+			<% for(var j=0; j<board[i].length; j++) { %>
+				<td style="width:20px;height:20px;border:1px solid black;" data-coord-x=<%= j %> data-coord-y=<%= i %>> <%= board[i][j] %> </td>
+			<% } %>
+		</tr>
+	<% } %>
+</table>
+<% if(winner) { %>
+	<p>Player <%= winner %> wins!</p>
+<% } %>
+
