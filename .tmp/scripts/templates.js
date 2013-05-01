@@ -27,7 +27,7 @@ __p += '\n\t<p>Player ' +
 ((__t = ( winner )) == null ? '' : __t) +
 ' wins!</p>\n';
  } ;
-__p += '\n\n';
+
 
 }
 return __p
